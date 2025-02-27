@@ -44,18 +44,8 @@ button{
     color: #fff;
     border-color: #fff;
 }
-button:hover{
-    color: black;
-    background-color: #ffb401;
-    border-color: #000;
-}
 .buttonAcionado {
     color: black;
     background-color: #ffb401;
     border-color: #000;
-}
-.buttonAcionado:hover{
-    color: rgb(255, 255, 255);
-    background-color: #0060f5;
-    border-color: #ffffff;
 }
