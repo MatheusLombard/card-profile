@@ -86,3 +86,27 @@ nav a{
     background-color: rgb(0, 0, 131);
     color: #fff;
 }
+hr{
+    width: 300px;   
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* CORES */
+
+.laranja{
+    background-color: orange;
+}
+.preto{
+    background-color: black;
+    color: white;
+}
+.roxo{
+    background-color: purple;
+}
+.verde{
+    background-color: green;
+}
+.vermelho{
+    background-color: red;
+}

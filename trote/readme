@@ -1,0 +1,146 @@
+<h4>1.1 - Equipe</h4>
+        <p>Serão formadas equipes pela Reitoria, conforme Tabelas 1 e 2, de acordo com a
+            quantidade de estudantes matriculados em cada curso (Tabela 2), de forma a garantir a
+            equidade entre as equipes.</p>
+        <p><b>ATENÇÃO:</b> Cada equipe será reconhecida por uma cor (<span style="color: orange;">Laranja</span>,
+            <b>Preta</b>, <span style="color: purple;">Roxa</span>,
+            <span style="color: green;">Verde</span>, <span style="color: red;">Red</span>), a ser sorteada no dia da
+            divulgação do Regulamento em
+            <b>18/02/2025</b>. As equipes deverão trabalhar suas respectivas cores, também na noite de
+            encerramento do <b>TROTE SOLIDÁRIO Uni-FACEF 2025</b>, utilizando sua respectiva cor
+            no vestuário e adereços. Cada equipe que tiver os seus membros bem caracterizados
+            com sua respectiva cor ganhará <b>1.000 pontos </b>, após avaliação do corpo de jurados.
+            Cabe destacar ainda, que a ordem das atividades, bem como da disposição das salas
+            para entrega dos alimentos, e de apresentação no Encerramento, seguirá a ordem
+            alfabética das cores.
+        </p>
+        <p>É importante lembrar que haverá registro de presença para fins de emissão de
+            cerificados.</p>
+        <p>As equipes serão responsáveis pelo planejamento, arrecadação e
+            armazenamento prévio dos itens aqui relacionados. A entrega dos alimentos, dos
+            suplementos alimentares, bem como dos comprovantes de realização das provas da
+            Doação de Sangue e da Ação Social, para fins de pontuação, deverá ocorrer<span
+                style="font-weight: bold; text-decoration: underline;">única e exclusivamente, das 8h às 10h00, no dia
+                02/04/2025 (quarta-feira), na Unidade I</span>
+            <b>(Av. Major Nicácio, 2433)</b>, conforme determinação deste Regulamento.
+        </p>
+        <div id="tabelaEquipes">
+            <h4>Tabela 1 - Equipe e Padrinhos</h4>
+            <table border="2" style="border-collapse: collapse;">
+                <tr>
+                    <th>Equipes</th>
+                    <th>Cursos</th>
+                    <th>Alunos</th>
+                    <th>Padrinhos</th>
+                </tr>
+                <tr>
+                    <td bgcolor="orange">Laranja</td>
+                    <td>
+                        <p>Matemática</p>
+                        <p>Letras (Português/Inglês)</p>
+                        <p>Engenharia de Software</p>
+                    </td>
+                    <td>97</td>
+                    <td style="color: red;">Em Breve</td>
+                </tr>
+                <tr>
+                    <td bgcolor="black" style="color: white;">Preta</td>
+                    <td>
+                        <p>Medicina</p>
+                        <p>Enfermagem</p>
+                    </td>
+                    <td>103</td>
+                    <td style="color: red;">Em Breve</td>
+                </tr>
+                <tr>
+                    <td bgcolor="purple">Roxa</td>
+                    <td>
+                        <p>Comunic. Social – PP</p>
+                        <p>Sistemas de Informação</p>
+                        <p>Ciência da Computação</p>
+                    </td>
+                    <td>97</td>
+                    <td style="color: red;">Em Breve</td>
+                </tr>
+                <tr>
+                    <td bgcolor="green">Verde</td>
+                    <td>
+                        <p>Engenharia de Produção</p>
+                        <p>Engenharia Civil</p>
+                        <p>Psicologia</p>
+                    </td>
+                    <td>97</td>
+                    <td style="color: red;">Em Breve</td>
+                </tr>
+                <tr>
+                    <td bgcolor="red">Vermelha</td>
+                    <td>
+                        <p>Administração</p>
+                        <p>Ciências Contábeis</p>
+                    </td>
+                    <td>97</td>
+                    <td style="color: red;">Em Breve</td>
+                </tr>
+            </table>
+        </div>
+        <div id="tabelaEquipes">
+            <h4>Tabela 1 - Cursos e Alunos</h4>
+            <table border="2" style="border-collapse: collapse;">
+                <tr>
+                    <th>Cursos</th>
+                    <th>Alunos</th>
+                </tr>
+                <tr>
+                    <td>Administração</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Ciência da Computação</td>
+                    <td>36</td>
+                </tr>
+                <tr>
+                    <td>Ciências Contábeis</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td>Comunicação Social – Publ. e Propaganda</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td>Engermagem</td>
+                    <td>19</td>
+                </tr>   
+                <tr>
+                    <td>Engenharia Civil</td>
+                    <td>20</td>
+                </tr>   
+                <tr>
+                    <td>Engenharia de Produção</td>
+                    <td>09</td>
+                </tr>   
+                <tr>
+                    <td>Engenharia de Software </td>
+                    <td>60</td>
+                </tr>   
+                <tr>
+                    <td>Letras (Port./Inglês)</td>
+                    <td>22</td>
+                </tr>   
+                <tr>
+                    <td>Matemática</td>
+                    <td>16</td>
+                </tr>   
+                <tr>
+                    <td>Medicina</td>
+                    <td>84</td>
+                </tr>   
+                <tr>
+                    <td>Psicologia</td>
+                    <td>60</td>
+                </tr>   
+                <tr>
+                    <td>Sistema de Informação</td>
+                    <td>29</td>
+                </tr>       
+            </table>
+        </div>
