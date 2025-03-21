@@ -91,6 +91,21 @@ hr{
     margin-top: 8px;
     margin-bottom: 8px;
 }
+#quadroMetas {
+    padding: 40px;
+    background-color:   #dbe5f1;
+    border: 1px solid;
+}
+#quadroMetas ul li ul li{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+#quadroMetas ul li ul li ul li{
+    margin-left: 35px;
+}
+
 
 /* CORES */
 
