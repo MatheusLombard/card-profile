@@ -106,6 +106,29 @@ hr{
     margin-left: 35px;
 }
 
+.quadro{ 
+    background-color: #edefd5;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 50px;
+}
+.quadro h2{
+    text-align: left;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+#listaObs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
 
 /* CORES */
 
@@ -124,4 +147,10 @@ hr{
 }
 .vermelho{
     background-color: red;
+}
+
+/* estilos */
+
+.underline{
+    text-decoration: underline;
 }

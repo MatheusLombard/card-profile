@@ -6,6 +6,8 @@
 
         <link rel="stylesheet" href="./css/styles.css">
 
+        <script src="js/scripts.js"></script>
+
         <title>Trote Solidário - 2025</title>
     </head>
     <body>
@@ -21,7 +23,7 @@
                 <a href="gincana.html"> Gincana </a>
                 <a href="integracao.html"> Integração </a>
                 <a href="observacoes.html"> Observações </a>
-                <a href="calculadora.html"> Calculadoras </a>
+                <a href="calculadoras.html"> Calculadoras </a>
                 
             </div>
             <div id="img-menu">
@@ -32,10 +34,21 @@
         <!-- id não pode ser reutilizado pois só temos um elemento por id -->
         <div class="container">
                 <h2> Trote Solidário 2025 </h2> 
-                <p>Construa vitórias fora de campo e jogue pela solidariedade</p>
-                <p>Centro Universitário Municipal de Franca</p>
-                <p>Uni-facef</p>
-                <p>Franca</p>
+                <h3>Calculadoras</h3>
+                <form>
+                    <div>
+                        <label for="mascote">Mascote do Time: </label>
+                        <input type="number" id="mascote">
+                    </div>
+                    <div>
+                        <label for="homenagem">Homenagem a um atleta: </label>
+                        <input type="number" id="homenagem">
+                    </div>
+                    <div>
+                        <button type="button" onclick="calcular()">Calcular</button>
+                        <label for=""></label>
+                    </div>
+                </form>
             </div>
         </div>
     </body>
