@@ -1,20 +1,18 @@
 function calcular() {
     //vamos criar duas variaveis 
-    //js as variaveis não possuem tipo 
-
-    alert('Sucess, link realizado com sucesso')
+    //js as variaveis não possuem tipo
     
-    let mascote, homenagem;
+    let mascote, homenagem, leite, kitAvulso, suplementoAvulso;
     
     mascote = document.getElementById('mascote').value
     homenagem = document.getElementById('homenagem').value
-    
-    console.log(mascote)
-    console.log(homenagem)
+    leite = document.getElementById('leite').value
+    kitAvulso = document.getElementById('kitAvulso').value
+    suplementoAvulso = document.getElementById('suplementoAvulso').value
     
     let soma;
 
-    soma = Number(mascote) + Number(homenagem)
+    soma = Number(mascote) + Number(homenagem) + (Number(leite)* 2) + (Number(kitAvulso) * 30) + (Number(suplementoAvulso) * 15)
 
-    console.log(soma)
+    document.getElementById("soma").innerHTML = `A soma é ${soma}`
 }
