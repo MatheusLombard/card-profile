@@ -154,3 +154,35 @@ form div{
 .underline{
     text-decoration: underline;
 }
+
+/* TELA DE CALCULADORAS */
+
+body.background-laranja{
+    background-color: #773a00;
+}
+#calculadoras .container{
+    height: calc(100vh - 250px);
+}   
+#calculadoras.background-laranja .container{
+    background-color: #ff7d04;
+}
+
+form{
+    height: 100%;
+}
+
+#divEquipes {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+#divEquipes label{
+    font-size: 40px;
+
+}
+#divEquipes select{
+    height: 50px;
+    width: 50%;
+}
