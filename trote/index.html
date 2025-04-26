@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Trote Solidário - 2025</title>
+</head>
+<body>
+  <header>Trote Solidário 2025</header>
 
-        <link rel="stylesheet" href="./css/styles.css">
+  <div class="book">
+    <!-- CAPA -->
+    <div class="page" id="capa">
+      <h2 id="titulo-capa-livro">Trote Solidário 2025</h2>
+      <img src="img/logo.jpg" alt="imagem-capa" width="400">
+      <p>Construa vitórias fora de campo e jogue pela solidariedade</p>
+      <p>Centro Universitário Municipal de Franca</p>
+      <p>Uni-facef</p>
+      <p>Franca</p>
+    </div>
 
-        <title>Trote Solidário - 2025</title>
-    </head>
-    <body>
-        <header> <!-- Cabeçalho do corpo da página -->
-            Trote Solidário 2025
-        </header>
-        <nav> <!-- Barra de navegação -->
-            <div id="links-menu">
-                <a href="index.html"> Home </a>
-                <a href="./introducao.html"> introdução </a>
-                <a href="objetivo.html"> Objetivo </a>
-                <a href="formato.html"> Formato </a>
-                <a href="gincana.html"> Gincana </a>
-                <a href="integracao.html"> Integração </a>
-                <a href="observacoes.html"> Observações </a>
-                <a href="calculadora.html"> Calculadoras </a>
-                
-            </div>
-            <div id="img-menu">
-                <img src="./img/logo.jpg" alt="Trote Solidário" width="90">
-            </div>
-        </nav>
-        <!-- class podemos reutilizar o estilo, id não  -->
-        <!-- id não pode ser reutilizado pois só temos um elemento por id -->
-        <div class="container">
-                <h2> Trote Solidário 2025 </h2> 
-                <p>Construa vitórias fora de campo e jogue pela solidariedade</p>
-                <p>Centro Universitário Municipal de Franca</p>
-                <p>Uni-facef</p>
-                <p>Franca</p>
-            </div>
-        </div>
-    </body>
+    <!-- PÁGINA 1 -->
+    <div class="page" id="pagina1">
+      <h2>Sobre o Evento</h2>
+      <p>O Trote Solidário é uma campanha que busca integrar novos alunos...</p>
+    </div>
+
+    <!-- PÁGINA 2 -->
+    <div class="page" id="pagina2">
+      <h2>Como Participar</h2>
+      <p>Você pode participar doando alimentos não perecíveis...</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <button id="prev">Página anterior</button>
+    <button id="next">Próxima página</button>
+  </div>
+
+  <script>
+const pages = document.querySelectorAll('.page');
+let currentPage = 0;
+
+// Inicializa: todas as páginas depois da capa com z-index negativo
+pages.forEach((page, index) => {
+    page.style.zIndex = pages.length - index; // Inverso, para a primeira estar na frente
+});
+
+document.getElementById('next').addEventListener('click', () => {
+    if (currentPage < pages.length) {
+        pages[currentPage].classList.add('flipped');
+        pages[currentPage].style.zIndex = currentPage; // Depois de flipar, coloca z-index mais baixo
+        currentPage++;
+        if(currentPage != 0){
+            
+        }
+    }
+});
+
+document.getElementById('prev').addEventListener('click', () => {
+    if (currentPage > 0) {
+        currentPage--;
+        pages[currentPage].classList.remove('flipped');
+        pages[currentPage].style.zIndex = pages.length - currentPage; // Quando desfaz o flip, volta z-index pra frente
+    }
+});
+
+  </script>
+</body>
 </html>

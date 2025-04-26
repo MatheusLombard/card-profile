@@ -1,188 +1,77 @@
-*{    
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+body {
     font-family: Arial, sans-serif;
     background-color: #ebebeb;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-header{
+header {
     background-color: #0060f5;
     color: white;
     padding: 40px 0;
     font-size: 24px;
+    width: 100%;
 }
-nav{
-    background-color: #ffb401;
-    padding: 20px;
+#titulo-capa-livro {
+    font-size: xx-large;
+}
+.book {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 100px;
-    gap: 10px;
-}
-
-#links-menu{
-    display: flex;
-    gap: 30px;
-}
-
-nav a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 18px;
-    background-color: #0060f5;
-    border-radius: 13px;
-    cursor: pointer;
-
-}
-#img-menu{
-    height: 100%;
-    display: flex;
-    align-items: center; 
-}
-#img-menu img{
     position: relative;
-    width: 120px;
-    height: auto;
-    border-radius: 13px;
-    margin-right: 30px;
-}
-.container{ 
-    width: 80%;
-    background-color: white;
-    border-radius: 15px;
+    width: 700px;
+    height: 800px;
     margin: 20px auto;
-    padding: 100px;
-    text-align: justify;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+    perspective: 2000px;
 }
-.container h2, .container h3{
-    text-align: center;
-}
-
-.container ol {
-    display: flex;
-    gap: 30px;
-}
-#tabelaEquipes{
-    align-self: center;
-}
-#tabelaEquipes h4{
-    text-align: center;
-}
-#tabelaEquipes tr th, #tabelaEquipes tr td{
-    text-align: center;
-    padding: 20px;
-}
-#tabelaEquipes th{
-    background-color: rgb(0, 0, 131);
-    color: #fff;
-}
-hr{
-    width: 300px;   
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-#quadroMetas {
-    padding: 40px;
-    background-color:   #dbe5f1;
-    border: 1px solid;
-}
-#quadroMetas ul li ul li{
-    position: relative;
-    margin-left: 25px;
-    margin-top: 17px;
-    margin-bottom: 17px;
-}
-#quadroMetas ul li ul li ul li{
-    margin-left: 35px;
-}
-
-.quadro{ 
-    background-color: #edefd5;
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+.page {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 50px;
-}
-.quadro h2{
-    text-align: left;
-}
-
-form div{
-    margin-bottom: 20px;
-}
-
-#listaObs{
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    width: 80%;
-    align-self: center;
-    margin-top: 30px;
-}
-
-/* CORES */
-
-.laranja{
-    background-color: orange;
-}
-.preto{
-    background-color: black;
-    color: white;
-}
-.roxo{
-    background-color: purple;
-}
-.verde{
-    background-color: green;
-}
-.vermelho{
-    background-color: red;
-}
-
-/* estilos */
-
-.underline{
-    text-decoration: underline;
-}
-
-/* TELA DE CALCULADORAS */
-
-body.background-laranja{
-    background-color: #773a00;
-}
-#calculadoras .container{
-    height: calc(100vh - 250px);
-}   
-#calculadoras.background-laranja .container{
-    background-color: #ff7d04;
-}
-
-form{
-    height: 100%;
-}
-
-#divEquipes {
-    height: 100%;
-    display: flex;
     align-items: center;
-    gap: 15px;
-
+    justify-content: space-between;
+    text-align: justify;
+    transition: transform 1s, z-index 1s;
+    backface-visibility: hidden;
+    transform-origin: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 0;
 }
-#divEquipes label{
-    font-size: 40px;
-
+.page h2, .page h3 {
+    text-align: center;
 }
-#divEquipes select{
-    height: 50px;
-    width: 50%;
+.page.flipped {
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+.buttons {
+    margin: 20px;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0060f5;
+    color: white;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background-color: #004bb5;
 }
