@@ -1,77 +1,210 @@
-* {
+*{    
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: #ebebeb;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-header {
+header{
     background-color: #0060f5;
     color: white;
     padding: 40px 0;
     font-size: 24px;
-    width: 100%;
 }
-#titulo-capa-livro {
-    font-size: xx-large;
-}
-.book {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 700px;
-    height: 800px;
-    margin: 20px auto;
-    perspective: 2000px;
-}
-.page {
-    width: 100%;
-    height: 100%;
-    background: white;
+
+.container{ 
+    width: 900px;
+    height: 1000px;
+    background-color: white;
     border-radius: 15px;
+    margin: 20px auto;
+    padding: 50px;
+    text-align: justify;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.paginas{
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 50px;
+    height: 100%;
+    width: 100%;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    text-align: justify;
-    transition: transform 1s, z-index 1s;
+    justify-content: space-between; 
+    padding: 40px;
+    transition: transform 3s, z-index 3s;
     backface-visibility: hidden;
     transform-origin: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    transform-style: preserve-3d;
 }
-.page h2, .page h3 {
+
+.paginas.flipar{
+    transform: rotateY(-180deg);
+}
+#capa h2{
+    font-size: xx-large;
+}
+.container h2, .container h3{
     text-align: center;
 }
-.page.flipped {
-    transform: rotateY(-180deg);
-    z-index: 1;
+.botoes{
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    margin: 0 auto;
 }
-.buttons {
-    margin: 20px;
-}
-.buttons button {
-    padding: 10px 20px;
-    margin: 0 10px;
-    font-size: 18px;
+.botoes button{
     border-radius: 10px;
-    border: none;
-    background-color: #0060f5;
-    color: white;
-    cursor: pointer;
+    height: 40px;
+    width: 250px;
+    font-weight: 700;
 }
-.buttons button:hover {
-    background-color: #004bb5;
+.paginas#pagina2, .paginas#pagina10, .paginas#pagina15, .paginas#pagina16{
+    justify-content: flex-start;
+}
+.paginas#pagina3{
+    justify-content: space-around;
+}
+.container ol {
+    display: flex;
+    gap: 30px;
+}
+.container .tabelaEquipes ol {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    
+}
+.tabelaEquipes{
+    align-self: center;
+}
+.tabelaEquipes table{
+    border-collapse: collapse;
+}
+.tabelaEquipes h4{
+    text-align: center;
+}
+.tabelaEquipes tr th, .tabelaEquipes tr td{
+    text-align: center;
+    padding: 20px;
+}
+.tabelaEquipes th{
+    background-color: rgb(0, 0, 131);
+    color: #fff;
+}
+hr{
+    width: 300px;   
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.quadroMetas {
+    padding: 40px;
+    background-color:   #dbe5f1;
+    border: 1px solid;
+}
+.quadroMetas ul li ul li{
+    position: relative;
+    margin-left: 25px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+.quadroMetas ul li ul li ul li{
+    margin-left: 35px;
+}
+
+.quadro{ 
+    background-color: #edefd5;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 50px;
+}
+.quadro h2{
+    text-align: left;
+}
+
+form div{
+    margin-bottom: 20px;
+}
+
+#listaObs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    align-self: center;
+    margin-top: 30px;
+}
+
+/* CORES */
+
+.laranja{
+    background-color: orange;
+}
+.azul{
+    background-color: rgb(0, 0, 131);
+    color: #fff;
+}
+.preto{
+    background-color: black;
+    color: white;
+}
+.roxo{
+    background-color: purple;
+}
+.verde{
+    background-color: green;
+}
+.vermelho{
+    background-color: red;
+}
+
+/* estilos */
+
+.underline{
+    text-decoration: underline;
+}
+
+/* TELA DE CALCULADORAS */
+
+body.background-laranja{
+    background-color: #773a00;
+}
+#calculadoras .container{
+    height: calc(100vh - 250px);
+}   
+#calculadoras.background-laranja .container{
+    background-color: #ff7d04;
+}
+
+form{
+    height: 100%;
+}
+
+#divEquipes {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+#divEquipes label{
+    font-size: 40px;
+
+}
+#divEquipes select{
+    height: 50px;
+    width: 50%;
 }

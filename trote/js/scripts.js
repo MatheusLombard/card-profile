@@ -104,3 +104,28 @@ function calcular() {
 
     document.getElementById("soma").innerHTML = `A soma é ${soma}`;
 }
+
+
+//Flipar a pagina
+const paginas = document.querySelectorAll('.paginas');
+let paginaAtual = 0;
+
+// Ajustar z-index inicial (topo -> fundo)
+paginas.forEach((pagina, index) => {
+  pagina.style.zIndex = paginas.length - index;
+});
+
+function proximaPagina() {
+  if (paginaAtual < paginas.length) {
+    paginas[paginaAtual].classList.add('flipar');
+    paginaAtual++;
+  }
+}
+
+function paginaAnterior() {
+  if (paginaAtual > 0) {
+    paginaAtual--;
+    paginas[paginaAtual].classList.remove('flipar');
+  }
+}
+
