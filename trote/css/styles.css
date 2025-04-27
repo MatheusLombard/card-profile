@@ -19,7 +19,7 @@ header{
 
 .container{ 
     width: 900px;
-    height: 1000px;
+    height: 950px;
     background-color: white;
     border-radius: 15px;
     margin: 20px auto;
@@ -63,19 +63,22 @@ header{
     display: flex;
     width: 700px;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 0px auto 30px; 
 }
 .botoes button{
     border-radius: 10px;
-    height: 40px;
+    height: 50px;
     width: 250px;
     font-weight: 700;
 }
-.paginas#pagina2, .paginas#pagina10, .paginas#pagina15, .paginas#pagina16{
+.paginas#pagina2, .paginas#pagina4, .paginas#pagina10, .paginas#pagina15, .paginas#pagina16{
     justify-content: flex-start;
 }
 .paginas#pagina3{
     justify-content: space-around;
+}
+.paginas#pagina17{
+    justify-content: center;
 }
 .container ol {
     display: flex;
@@ -134,6 +137,12 @@ hr{
 .quadro h2{
     text-align: left;
 }
+#buttonPagCalculadora{
+    height: 55px;
+    width: 400px;
+    font-size: 17px;
+    border-radius: 20px;
+}
 
 form div{
     margin-bottom: 20px;
@@ -182,29 +191,90 @@ form div{
 body.background-laranja{
     background-color: #773a00;
 }
+body.background-roxo{
+    background-color: #4B0082;
+}
+body.background-preto{
+    background-color: #222222;
+}
+body.background-verde{
+    background-color: #006400;
+}
+body.background-vermelha{
+    background-color: #8B0000;
+}
 #calculadoras .container{
     height: calc(100vh - 250px);
 }   
 #calculadoras.background-laranja .container{
     background-color: #ff7d04;
 }
+#calculadoras.background-verde .container{
+    background-color: #32CD32;
+}
+#calculadoras.background-vermelha .container{
+    background-color: #FF4500 ;
+}
+#calculadoras.background-roxo .container{
+    background-color: #8A2BE2;
+}
+#calculadoras.background-preto .container{
+    background-color: #555555;
+}
 
 form{
     height: 100%;
 }
 
-#divEquipes {
-    height: 100%;
-    display: flex;
+button.prosseguir{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+}
+.campos{
+    flex-direction: column;
     align-items: center;
+    height: 100%;
     gap: 15px;
-
+    justify-content: center;
+    position: relative;
+    bottom: 40px;
 }
-#divEquipes label{
+
+.campos label{
     font-size: 40px;
-
+    
 }
-#divEquipes select{
+.campos select{
     height: 50px;
     width: 50%;
+}
+.campos input{
+    height: 50px;
+    width: 450px;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.campos button{
+    height: 100px;
+    width: 400px;
+    font-size: 34px;
+    border-radius: 30px;
+    transition: all .08s;
+}
+.campos button:focus{
+    height: 80px;
+    width: 380px;
+    font-size: 34px;
+}
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
 }

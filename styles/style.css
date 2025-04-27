@@ -8,7 +8,7 @@ body{
     background-color: #ffb401;
 }
 .container{
-    width: 350px;
+    width: 500px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;

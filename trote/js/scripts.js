@@ -1,3 +1,49 @@
+function equipeSelecionada(){
+    console.log('teset  ')
+    const equipe = document.getElementById('equipe').value
+    const body = document.getElementById('calculadoras')
+    
+    if(equipe == 'Laranja'){
+        body.className = ''
+        body.classList.add(`background-laranja`)
+    }else if(equipe == 'Preta'){
+        body.className = ''
+        body.classList.add(`background-preto`)
+    }else if(equipe == 'Roxa'){
+        body.className = ''
+        body.classList.add(`background-roxo`)
+    }else if(equipe == 'Verde'){
+        body.className = ''
+        body.classList.add(`background-verde`)
+    }else if(equipe == 'Vermelha'){
+        body.className = ''
+        body.classList.add(`background-vermelha`)
+    }else{
+        body.className = ''
+    }
+}
+let testeAtual = 0
+function prosseguir(event){
+    event.preventDefault();
+    const campos = document.querySelectorAll('.campos')
+    
+    if (testeAtual < campos.length - 1){
+        campos[testeAtual].classList.remove('d-flex')
+        campos[testeAtual].classList.add('d-none')
+        testeAtual ++
+        campos[testeAtual].classList.remove('d-none')
+        campos[testeAtual].classList.add('d-flex')
+        if(testeAtual === 7){
+            document.querySelector('.prosseguir').classList.add('d-none')
+        }else if(testeAtual === 8){
+            document.getElementById('retorno').classList.remove('d-none')
+        }
+    }
+
+
+}
+
+
 function calcular() {
     //vamos criar duas variaveis 
     //js as variaveis não possuem tipo
@@ -101,8 +147,10 @@ function calcular() {
             soma = soma + (sangue * 20)
         }
     }
+    
+    document.getElementById("soma").innerHTML = `O RESULTADO FINAL FOI:  <br>${soma}`;
+    prosseguir(event)
 
-    document.getElementById("soma").innerHTML = `A soma é ${soma}`;
 }
 
 
@@ -116,7 +164,7 @@ paginas.forEach((pagina, index) => {
 });
 
 function proximaPagina() {
-  if (paginaAtual < paginas.length) {
+  if (paginaAtual < paginas.length - 1) {
     paginas[paginaAtual].classList.add('flipar');
     paginaAtual++;
   }

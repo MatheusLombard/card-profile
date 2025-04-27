@@ -6,76 +6,68 @@
 
         <link rel="stylesheet" href="./css/styles.css">
 
-        <script src="js/scripts.js"></script>
+        
 
         <title>Trote Solidário - 2025</title>
     </head>
-    <body id="calculadoras" class="background-laranja">
+    <body id="calculadoras">
         <header> <!-- Cabeçalho do corpo da página -->
             Trote Solidário 2025
         </header>
-        <nav> <!-- Barra de navegação -->
-            <div id="links-menu">
-                <a href="index.html"> Home </a>
-                <a href="./introducao.html"> introdução </a>
-                <a href="objetivo.html"> Objetivo </a>
-                <a href="formato.html"> Formato </a>
-                <a href="gincana.html"> Gincana </a>
-                <a href="integracao.html"> Integração </a>
-                <a href="observacoes.html"> Observações </a>
-                <a href="calculadoras.html"> Calculadoras </a>
-                
-            </div>
-            <div id="img-menu">
-                <img src="./img/logo.jpg" alt="Trote Solidário" width="90">
-            </div>
-        </nav>
         <!-- class podemos reutilizar o estilo, id não  -->
         <!-- id não pode ser reutilizado pois só temos um elemento por id -->
         <div class="container">
                 <h2> Trote Solidário 2025 </h2> 
                 <h3>Calculadoras</h3>
                 <form>
-                    <div id="divEquipes" class="campos">
+                    <div id="divEquipes" class="campos d-flex">
                         <label for="">Selecione a cor da equipe: </label>
-                        <select name="" id="equipe">
+                        <select name="" id="equipe" onchange="equipeSelecionada()">
+                            <option value="Escolha">Selecione a cor da equipe</option>
                             <option value="Laranja">Laranja</option>
                             <option value="Preta">Preta</option>
                             <option value="Roxa">Roxa</option>
                             <option value="Verde">Verde</option>
-                            <option value="Vermelho">Vermelho</option>
+                            <option value="Vermelha">Vermelha</option>
                         </select>
                     </div>
-                    <!-- <div>
+                    <div id="div-mascote" class="campos d-none">
                         <label for="mascote">Mascote do Time: </label>
                         <input type="number" id="mascote">
+                        
                     </div>
-                    <div>
+                    <div id="div-homenagem" class="campos d-none">
                         <label for="homenagem">Homenagem a um atleta: </label>
                         <input type="number" id="homenagem">
                     </div>
-                    <div>
+                    <div id="div-leite" class="campos d-none">
                         <label for="leite">Litros de leite arrecadados </label>
                         <input type="number" id="leite">
                     </div>
-                    <div>
+                    <div id="div-kit" class="campos d-none">
                         <label for="kit">Kit alimentação</label>
                         <input type="number" id="kit">
                     </div>
-                    <div>
+                    <div id="div-suplemento" class="campos d-none">
                         <label for="suplemento">Suplemento</label>
                         <input type="number" id="suplemento">
                     </div>
-                    <div class="campos">
+                    <div id="div-sangue" class="campos d-none">
                         <label for="sangue">Doação de Sangue</label>
                         <input type="number" name="sangue" id="sangue">
                     </div>
-                    <div>
+                    <div id="div-calcular" class="campos d-none">
                         <button type="button" onclick="calcular()">Calcular</button>
-                        <label for="" id="soma"></label>
-                    </div> -->
+                        
+                    </div>
+                    <div id="div-resultado" class="campos d-none">
+                        <label for="" id="soma" style="text-align: center;"></label>
+                    </div>
+                    <button onclick="prosseguir(event)" class="prosseguir">PROSSEGUIR</button>
                 </form>
+                <a href="index.html"><button style="position: absolute; bottom: 0; right: 0;" class="prosseguir d-none" id="retorno">Retornar para o livro do Regulamento</button></a>
             </div>
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
